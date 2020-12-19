@@ -62,14 +62,16 @@ static esp_err_t hello_get_handler(httpd_req_t *req)
     return ESP_OK;
 }
 
-static const httpd_uri_t hello = {
-    .uri       = "/hello",
-    .method    = HTTP_GET,
-    .handler   = hello_get_handler,
-    /* Let's pass response string in user
-     * context to demonstrate it's usage */
-    .user_ctx  = "Hello World!"
-};
+// static const httpd_uri_t hello = {
+//     .uri       = "/hello",
+//     .method    = HTTP_GET,
+//     .handler   = hello_get_handler,
+//     /* Let's pass response string in user
+//      * context to demonstrate it's usage */
+//     .user_ctx  = "Hello World!"
+// };
+
+static httpd_uri_t hello;
 
 /* This handler allows the custom error handling functionality to be
  * tested from client side. For that, when a PUT request 0 is sent to
@@ -100,6 +102,12 @@ esp_err_t http_404_error_handler(httpd_req_t *req, httpd_err_code_t err)
 
 static httpd_handle_t start_webserver(void)
 {
+    
+    hello.uri = "/hello";
+    hello.method = HTTP_GET;
+    hello.handler = hello_get_handler;
+//     hello.user_ctx = "Hellow World!";
+    
     httpd_handle_t server = NULL;
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
 

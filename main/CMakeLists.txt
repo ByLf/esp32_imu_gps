@@ -1,4 +1,4 @@
-idf_component_register(SRCS "main.c" "wifi_start.c" "http_server.c"
+idf_component_register(SRCS "main.cpp" "wifi_start.cpp" "http_server.cpp" "gps_server.cpp"
                     INCLUDE_DIRS "."
                     EMBED_TXTFILES "certs/cacert.pem"
                                    "certs/prvtkey.pem")
