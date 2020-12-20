@@ -19,6 +19,8 @@
  * handlers for the web server.
  */
 
+LastSample last_sample;
+
 static const char *TAG = "example";
 
 /* An HTTP GET handler */

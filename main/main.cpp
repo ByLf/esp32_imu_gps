@@ -50,5 +50,5 @@ extern "C" void app_main(void)
     http_server_start();    
     wifi_start();
     
-//     gps_server_init();
+    gps_server_init();
 }

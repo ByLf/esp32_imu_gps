@@ -29,6 +29,6 @@ struct LastSample_ {
 
 typedef struct LastSample_ LastSample;
 
-LastSample last_sample;
+extern LastSample last_sample;
 
 #endif
