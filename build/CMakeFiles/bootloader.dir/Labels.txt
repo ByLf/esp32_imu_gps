@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/CMakeFiles/bootloader
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/CMakeFiles/bootloader.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/CMakeFiles/bootloader-complete.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/andrew/Documents/Hobby/Alex_project/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
