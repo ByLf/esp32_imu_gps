@@ -1,1 +1,0 @@
-cmd='/usr/bin/cmake;-DSDKCONFIG=/home/andrew/Documents/Hobby/Alex_project/hello_world/sdkconfig;-DIDF_PATH=/home/andrew/esp-idf;-DIDF_TARGET=esp32;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=/home/andrew/.espressif/python_env/idf4.1_py3.9_env/bin/python;-DEXTRA_COMPONENT_DIRS=/home/andrew/esp-idf/components/bootloader;-DLEGACY_INCLUDE_COMMON_HEADERS=;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

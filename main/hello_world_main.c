@@ -25,12 +25,13 @@
 void app_main(void)
 {
     int16_t Ax,Ay,Az,Gx,Gy,Gz,temp;
+    uint8_t dev_addr=0x68;
     uint8_t *data = (uint8_t *)malloc(14);
     data[0]=0x3B;
     printf("Hello world!\n");
     printf("%d \n",i2c_master_init());
-    printf("%d \n",i2c_master_wr(0,data,1));
-    printf("%d \n",i2c_master_rd(0,data,14));
+    //printf("%d \n",i2c_master_wr(0,data,1));
+    i2c_get(0,dev_addr,0x3B,data,14);
     Ax = (int16_t)(data[0] << 8 | data[1]);
     Ay = (int16_t)(data[2] << 8 | data[3]);
     Az = (int16_t)(data[4] << 8 | data[5]);
